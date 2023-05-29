@@ -19,7 +19,7 @@ clear all; clc
     
 %% Step 2: ------------------------- VB Setting ---------------------------
 
-VB_settings.Initialization_Strategy = "Domain Knowledge";  
+VB_settings.Initialization_Strategy = "MLE";  
 VB_settings.Likelihood = str2func("Likelihood_Hybrid_informativeprior_Sigma");
 VB_settings.prior_density = str2func("prior_density_Hybrid_informativeprior_Sigma");
 VB_settings.q_vb = str2func("q_VAFC_separate");

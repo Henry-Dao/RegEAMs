@@ -22,7 +22,7 @@ clear all; clc
 
 
 %% Step 2: ------------------------- VB Setting ---------------------------
-    VB_settings.Initialization_Strategy = "Domain Knowledge";   
+    VB_settings.Initialization_Strategy = "MLE";   
 
     VB_settings.VAFC = str2func("Hybrid_VAFC"); 
     VB_settings.Likelihood = str2func("Likelihood_Hybrid"); 
