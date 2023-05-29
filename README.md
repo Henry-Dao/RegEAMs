@@ -1,6 +1,6 @@
 # RegEAMs
 
-This manual provides detailed instructions for executing the code to perform Bayesian estimation for LBA and DDMs with regressors. To simplify the process, I have organized and placed all the necessary code in separate folders, each corresponding to a specific section in [my paper](https://arxiv.org/abs/2302.10389). For instance, if you wish to replicate the results presented in **Section 5.1** of the paper, please execute the code provided in the designated folder named "**Section_5\_1**". Within each folder, there are two main files: "**MAIN_CODE_MCMC.m**" and "**MAIN_CODE_VB.m**". You only need to run these .m files to perform the exact MCMC algorithm and the VB approximation, respectively. After successfully perform these algorithms, the results will be automatically stored as .mat files namely "*MCMC_result.mat*" and "*VB_result.mat*". These files will be served as inputs for the "**PLOTS.m**", which will generate the plots. Detailed explanations for each example are given below.
+This manual provides detailed instructions for executing the code to perform Bayesian estimation for LBA and DDMs with regressors. To simplify the process, I have organized and placed all the necessary code in separate folders, each corresponding to a specific section in [my paper](https://arxiv.org/abs/2302.10389) (coauthored with David Gunawan, Robert Kohn, Minh-Ngoc Tran, Guy Hawkins, and Scott Brown). For instance, if you wish to replicate the results presented in **Section 5.1** of the paper, please execute the code provided in the designated folder named "**Section_5\_1**". Within each folder, there are two main files: "**MAIN_CODE_MCMC.m**" and "**MAIN_CODE_VB.m**". You only need to run these .m files to perform the exact MCMC algorithm and the VB approximation, respectively. After successfully perform these algorithms, the results will be automatically stored as .mat files namely "*MCMC_result.mat*" and "*VB_result.mat*". These files will be served as inputs for the "**PLOTS.m**", which will generate the plots. Detailed explanations for each example are given below.
 
 If you encounter any errors or issues, please notify me via email at [**viethung.unsw\@gmail.com**](mailto:viethung.unsw@gmail.com).
 
@@ -36,5 +36,4 @@ This folder contains all the necessary Matlab files needed to replicate the resu
 
 For LBA models, please run the **"MAIN_CODE_VBL.m"** files in **RegLBA** subfolder. For DDMs, the Matlab code **"MAIN_CODE_VBL.m"** can be found in **RegDDM** subfolder.
 
-To generate the plots, please run **"PLOTS.m"** provided in each subfolder.
-Please note that you must finish running VBL (or any relevant process) before creating the plots.
+To generate the plots, please run **"PLOTS.m"** provided in each subfolder. Please note that you must finish running VBL (or any relevant process) before creating the plots.
