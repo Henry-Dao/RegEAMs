@@ -2,7 +2,7 @@
 clear all; clc
 
 load('MCMC_result.mat')
-t_start = 10001; % throw away draws from the burn-in and adaptation stage
+t_start = 1; % throw away draws from the burn-in and adaptation stage
 t_end = size(MCMC_draws.alpha,3);
 
 load('VB_result.mat')
